@@ -1,0 +1,132 @@
+// Colores
+$base-color: #f72585; 
+$base-color-2: #cbc0d3; 
+$base-color-3: #efd3d7; 
+$base-color-4: #feeafa; 
+$base-color-5: #dee2ff; 
+$base-color-6: #7209b7; 
+
+
+.App {
+  text-align: center;
+  background-color: $base-color-6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $base-color-5;
+  color: black;
+  width: 100vw;
+  height: 70px;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-body {
+  padding-top: 30px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Estilos propios
+
+
+
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+
+  padding: 5px;
+  margin: 5px;
+  background-color: $base-color;
+
+  min-width: 190px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.gameSetupForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.playersList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.playerName { 
+  font-weight: bold;
+  border-bottom: 2px solid;
+  margin-bottom: 10px;
+}
+
+.playerRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.playerCell {
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical-line {
+  width: 1px;
+  background-color: $base-color-4;
+  height: 35px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.betInput {
+  width: 35px;
+}
+
+.betBtn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
