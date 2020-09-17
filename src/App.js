@@ -9,12 +9,11 @@ import Game from './components/Game';
 function App() {
   return (
     <div className="App">
-      <div>Hola Mundo</div>
-      {/* <header className="App-header">
+      <header className="App-header">
         <label> La Podrida | El Difícil </label>
       </header>
       <div className="App-body">
-      <ToastContainer
+        <ToastContainer
                   position={toast.POSITION.TOP_RIGHT}
                   autoClose={5000}
                   transition={Slide}
@@ -23,7 +22,7 @@ function App() {
                 />
 
         <Game />
-      </div> */}
+      </div>
     </div>
   );
 }

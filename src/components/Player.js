@@ -40,8 +40,12 @@ const Player = ({
   }
 
   const handleBetConfirm = () => {
-    setBetToPlayer(index, bet);
-    setBet(0);
+     // TODO BRUNO
+    // Agregar control que valide que mi Bet mas el total de Bets sea menor al numero de manos (currentHandCards),
+    // sino mostrar un alert
+
+      setBetToPlayer(index, bet);
+      setBet(0);
   }
 
   const renderBet = () => {

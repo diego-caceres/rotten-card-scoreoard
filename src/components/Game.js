@@ -16,7 +16,7 @@ export const GAME_STAGE_ENUM = {
 const initialPlayers = [
   { id: getUniqueId(), name: 'Bruno', score: 0, currentBet: null },
   { id: getUniqueId(), name: 'Dado', score: 0, currentBet: null },
-  // { id: getUniqueId(), name: 'Leo', score: 0, currentBet: null },
+  { id: getUniqueId(), name: 'Leo', score: 0, currentBet: null },
   // { id: getUniqueId(), name: 'Gero', score: 0, currentBet: null },
   // { id: getUniqueId(), name: 'Pau', score: 0, currentBet: null },
   // { id: getUniqueId(), name: 'Moui', score: 0, currentBet: null },
@@ -43,6 +43,9 @@ const Game = () => {
   const [currentTurnOffset, setCurrentTurnOffset] = useState(0);
   const [currentPlayerOffset, setCurrentPlayerOffset] = useState(0);
   const [playersOff, setPlayersOff] = useState(0);
+
+  // TODO BRUNO
+  // AGregar un estado que maneje la cantidad total de apuestas
 
   useEffect(() => {
     if (players.length > 0) {
@@ -163,6 +166,9 @@ const Game = () => {
       copyPlayers[index].currentBet = bet;
       setPlayers(copyPlayers);
       increaseSelectedPlayer();
+
+       // TODO BRUNO
+      // Cuando se aposto, acutalizar el total de apuestas
     }
   }
 
@@ -245,6 +251,8 @@ const Game = () => {
       )}
       
       <div>
+        {/*  // TODO BRUNO Pasarle el total de apuestas a playerList como prop */}
+        {/* Y que PlayerList se lo pase a Player */}
         <PlayerList
           gameStage={gameStage}
           currentHandCards={currentHandCards}
